@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Jud Andrew C. Diamante — Résumé</title>
+<meta name="description" content="Jud Andrew C. Diamante — AI-Powered Virtual Assistant, Operations Support, and Workflow Automation. Ilocos Region, Philippines." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --paper:#f4ede0;
+    --paper-soft:#ede4d3;
+    --paper-edge:#e4d9c4;
+    --ink:#1a1614;
+    --ink-soft:#3d342c;
+    --ink-faint:#847868;
+    --ink-ghost:#b5a892;
+    --accent:#8a3324;       /* burnt sienna */
+    --accent-soft:#a84d37;
+    --teal:#2d5955;         /* secondary accent */
+    --rule:#cfc2a8;
+    --display:'Cormorant Garamond', 'Times New Roman', serif;
+    --body:'Inter', system-ui, sans-serif;
+    --mono:'JetBrains Mono', ui-monospace, monospace;
+  }
+
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:var(--body);
+    font-weight:400;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+    font-feature-settings:"ss01","cv11";
+  }
+  ::selection{background:var(--ink);color:var(--paper)}
+
+  /* paper texture */
+  body::before{
+    content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
+    background-image:
+      radial-gradient(ellipse at top, rgba(138,51,36,.04), transparent 60%),
+      radial-gradient(ellipse at bottom right, rgba(45,89,85,.04), transparent 60%);
+  }
+  body::after{
+    content:"";position:fixed;inset:0;pointer-events:none;z-index:1;opacity:.4;
+    background-image:
+      radial-gradient(1px 1px at 25% 15%, rgba(26,22,20,.04) 50%, transparent 50%),
+      radial-gradient(1px 1px at 70% 60%, rgba(26,22,20,.03) 50%, transparent 50%),
+      radial-gradient(1px 1px at 40% 85%, rgba(26,22,20,.04) 50%, transparent 50%);
+    background-size:4px 4px, 6px 6px, 8px 8px;
+  }
+
+  a{color:var(--accent);text-decoration:none;border-bottom:1px solid transparent;transition:border-color .25s}
+  a:hover{border-bottom-color:var(--accent)}
+
+  .page{
+    max-width:1180px;margin:0 auto;padding:clamp(24px,4vw,64px);
+    position:relative;z-index:2;
+  }
+
+  /* ───────── MASTHEAD ───────── */
+  .masthead{
+    padding:clamp(20px,3vw,40px) 0 32px;
+    border-bottom:1px solid var(--ink);
+    position:relative;
+  }
+  .masthead::before{
+    content:"";position:absolute;left:0;right:0;bottom:-4px;
+    border-bottom:1px solid var(--ink);
+  }
+  .masthead-top{
+    display:flex;justify-content:space-between;align-items:flex-start;
+    font-family:var(--mono);font-size:11px;letter-spacing:.22em;
+    text-transform:uppercase;color:var(--ink-faint);
+    margin-bottom:32px;
+    flex-wrap:wrap;gap:12px;
+  }
+  .masthead-top .edition{color:var(--accent)}
+
+  h1.name{
+    font-family:var(--display);
+    font-weight:400;
+    font-size:clamp(52px, 9.5vw, 140px);
+    line-height:.88;
+    letter-spacing:-.035em;
+    color:var(--ink);
+    margin-bottom:24px;
+  }
+  h1.name .initial{
+    font-style:italic;font-weight:500;
+    color:var(--accent);
+  }
+
+  .title-row{
+    display:flex;justify-content:space-between;align-items:baseline;
+    flex-wrap:wrap;gap:20px;padding-top:12px;
+    border-top:1px solid var(--rule);
+  }
+  .title-row .title{
+    font-family:var(--display);font-style:italic;font-weight:400;
+    font-size:clamp(18px,2vw,26px);color:var(--ink-soft);
+    letter-spacing:-.005em;
+  }
+  .title-row .title .sep{color:var(--accent);margin:0 10px;font-style:normal}
+  .title-row .location{
+    font-family:var(--mono);font-size:11px;letter-spacing:.22em;
+    text-transform:uppercase;color:var(--ink-faint);
+  }
+
+  /* ───────── BODY TWO-COLUMN ───────── */
+  .body-grid{
+    display:grid;
+    grid-template-columns:300px 1fr;
+    gap:56px;
+    padding:56px 0;
+  }
+  @media(max-width:880px){
+    .body-grid{grid-template-columns:1fr;gap:32px;padding:32px 0}
+  }
+
+  /* Sidebar */
+  aside.sidebar{
+    position:sticky;top:32px;align-self:start;
+    padding-right:24px;
+    border-right:1px solid var(--rule);
+  }
+  @media(max-width:880px){
+    aside.sidebar{position:static;border-right:0;border-bottom:1px solid var(--rule);padding:0 0 24px}
+  }
+
+  .side-block{margin-bottom:36px}
+  .side-label{
+    font-family:var(--mono);font-size:10px;letter-spacing:.25em;
+    text-transform:uppercase;color:var(--accent);
+    margin-bottom:12px;display:flex;align-items:center;gap:10px;
+  }
+  .side-label::before{
+    content:"";width:18px;height:1px;background:var(--accent);
+  }
+  .side-block p, .side-block a{
+    font-size:15px;color:var(--ink-soft);line-height:1.55;
+    display:block;margin-bottom:4px;
+    word-break:break-word;
+  }
+  .side-block a{color:var(--ink);font-weight:500}
+  .side-block a:hover{color:var(--accent)}
+
+  .skills-list{list-style:none}
+  .skills-list li{
+    padding:10px 0;border-bottom:1px dashed var(--rule);
+    display:flex;justify-content:space-between;align-items:baseline;gap:12px;
+    font-size:14px;color:var(--ink-soft);
+  }
+  .skills-list li:last-child{border-bottom:0}
+  .skills-list .skill-name{font-weight:500;color:var(--ink)}
+  .skills-list .skill-level{
+    font-family:var(--mono);font-size:10px;letter-spacing:.15em;
+    color:var(--ink-faint);text-transform:uppercase;white-space:nowrap;
+  }
+
+  .stack-chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:4px}
+  .chip{
+    font-family:var(--mono);font-size:10px;letter-spacing:.1em;
+    padding:4px 9px;border:1px solid var(--rule);border-radius:2px;
+    color:var(--ink-soft);background:var(--paper-soft);
+    text-transform:uppercase;
+  }
+
+  /* Main column */
+  main.content{min-width:0}
+
+  .section{margin-bottom:56px}
+  .section-head{
+    display:grid;grid-template-columns:auto 1fr auto;gap:20px;
+    align-items:baseline;margin-bottom:28px;
+    padding-bottom:14px;border-bottom:1px solid var(--ink);
+  }
+  .section-num{
+    font-family:var(--mono);font-size:11px;letter-spacing:.22em;color:var(--accent);
+    text-transform:uppercase;
+  }
+  .section-title{
+    font-family:var(--display);font-weight:400;font-style:italic;
+    font-size:clamp(26px,3.2vw,38px);letter-spacing:-.01em;color:var(--ink);
+    line-height:1;
+  }
+  .section-meta{
+    font-family:var(--mono);font-size:10px;letter-spacing:.22em;
+    color:var(--ink-faint);text-transform:uppercase;
+  }
+
+  /* Summary with drop cap */
+  .summary{
+    font-family:var(--display);font-weight:400;
+    font-size:clamp(18px,1.6vw,22px);line-height:1.55;letter-spacing:-.005em;
+    color:var(--ink-soft);
+    column-count:1;
+  }
+  .summary::first-letter{
+    font-family:var(--display);font-weight:500;font-style:italic;
+    font-size:5.4em;line-height:.82;float:left;
+    padding:6px 14px 0 0;color:var(--accent);
+  }
+
+  /* Experience entry */
+  .entry{
+    display:grid;grid-template-columns:140px 1fr;gap:32px;
+    padding:28px 0;border-top:1px solid var(--rule);
+  }
+  .entry:first-of-type{border-top:0;padding-top:0}
+  .entry-date{
+    font-family:var(--mono);font-size:11px;letter-spacing:.18em;
+    color:var(--ink-faint);text-transform:uppercase;padding-top:6px;
+  }
+  .entry-date .now{color:var(--accent);font-weight:500}
+  .entry-body h3{
+    font-family:var(--display);font-weight:500;
+    font-size:clamp(22px,2.4vw,28px);line-height:1.1;letter-spacing:-.015em;
+    color:var(--ink);margin-bottom:4px;
+  }
+  .entry-body .org{
+    font-family:var(--display);font-style:italic;font-weight:400;
+    font-size:17px;color:var(--ink-soft);margin-bottom:14px;
+    display:flex;align-items:center;gap:10px;flex-wrap:wrap;
+  }
+  .entry-body .org .pill{
+    font-family:var(--mono);font-size:9px;letter-spacing:.18em;
+    padding:2px 8px;border:1px solid var(--accent);color:var(--accent);
+    border-radius:2px;text-transform:uppercase;font-style:normal;
+  }
+  .entry-body ul{list-style:none;margin-top:8px}
+  .entry-body ul li{
+    position:relative;padding:5px 0 5px 20px;color:var(--ink-soft);
+    font-size:15px;line-height:1.6;
+  }
+  .entry-body ul li::before{
+    content:"—";position:absolute;left:0;top:5px;color:var(--accent);
+    font-weight:500;
+  }
+  .entry-body ul li strong{color:var(--ink);font-weight:500}
+
+  @media(max-width:720px){
+    .entry{grid-template-columns:1fr;gap:10px;padding:24px 0}
+  }
+
+  /* Projects list — different style from experience */
+  .projects-grid{display:grid;gap:14px}
+  .project{
+    display:grid;grid-template-columns:auto 1fr auto;gap:20px;
+    padding:18px 0;border-top:1px dashed var(--rule);
+    align-items:baseline;
+  }
+  .project:first-of-type{border-top:0;padding-top:4px}
+  .project .p-num{
+    font-family:var(--mono);font-size:11px;color:var(--accent);letter-spacing:.1em;
+  }
+  .project .p-body{
+    font-family:var(--display);font-size:clamp(17px,1.5vw,19px);
+    line-height:1.45;color:var(--ink);letter-spacing:-.005em;
+  }
+  .project .p-body em{font-style:italic;color:var(--accent)}
+  .project .p-body .desc{
+    display:block;font-family:var(--body);font-size:14px;
+    color:var(--ink-faint);margin-top:4px;letter-spacing:0;
+  }
+  .project .p-tag{
+    font-family:var(--mono);font-size:10px;letter-spacing:.15em;
+    color:var(--ink-faint);text-transform:uppercase;
+  }
+  @media(max-width:720px){
+    .project{grid-template-columns:auto 1fr;gap:12px}
+    .project .p-tag{grid-column:1 / -1;padding-left:28px}
+  }
+
+  /* AI capabilities list */
+  .ai-grid{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:1px;background:var(--rule);
+    border:1px solid var(--rule);
+  }
+  .ai-item{
+    background:var(--paper);padding:22px 24px;
+    transition:background .3s;
+  }
+  .ai-item:hover{background:var(--paper-soft)}
+  .ai-item h4{
+    font-family:var(--display);font-weight:500;font-size:18px;
+    color:var(--ink);margin-bottom:6px;letter-spacing:-.01em;
+  }
+  .ai-item h4 .num{
+    color:var(--accent);font-family:var(--mono);font-size:11px;
+    margin-right:10px;font-weight:400;
+  }
+  .ai-item p{font-size:13.5px;color:var(--ink-soft);line-height:1.5}
+
+  /* Pullquote / availability */
+  .availability{
+    padding:40px 0;
+    text-align:center;border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+    margin:40px 0;
+  }
+  .availability .dot{
+    display:inline-block;width:8px;height:8px;border-radius:50%;
+    background:var(--teal);margin-right:12px;vertical-align:middle;
+    animation:pulse 2s ease-in-out infinite;
+  }
+  @keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+  .availability .label{
+    font-family:var(--mono);font-size:11px;letter-spacing:.25em;
+    text-transform:uppercase;color:var(--teal);margin-bottom:14px;
+  }
+  .availability .statement{
+    font-family:var(--display);font-style:italic;font-weight:400;
+    font-size:clamp(22px,3vw,34px);line-height:1.3;color:var(--ink);
+    max-width:720px;margin:0 auto;letter-spacing:-.01em;
+  }
+  .availability .statement em{color:var(--accent);font-style:italic;font-weight:500}
+
+  /* Footer */
+  footer.colophon{
+    padding:32px 0 12px;margin-top:24px;
+    border-top:1px solid var(--ink);
+    display:flex;justify-content:space-between;align-items:center;
+    flex-wrap:wrap;gap:16px;
+    font-family:var(--mono);font-size:10px;letter-spacing:.22em;
+    text-transform:uppercase;color:var(--ink-faint);
+  }
+  footer.colophon .accent{color:var(--accent)}
+
+  /* Print */
+  @media print{
+    body{background:#fff;color:#000}
+    body::before,body::after{display:none}
+    .page{max-width:none;padding:0.4in}
+    .availability{break-inside:avoid}
+    .entry{break-inside:avoid}
+    aside.sidebar{position:static}
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <!-- MASTHEAD -->
+  <header class="masthead">
+    <div class="masthead-top">
+      <div>Curriculum Vitæ · <span class="edition">Vol. I</span> · Edition 2026</div>
+      <div>Ilocos Region · Philippines</div>
+    </div>
+
+    <h1 class="name">
+      <span class="initial">J</span>ud <span class="initial">A</span>ndrew<br/>
+      Diamante
+    </h1>
+
+    <div class="title-row">
+      <div class="title">
+        AI-Powered Virtual Assistant <span class="sep">·</span> Operations Support <span class="sep">·</span> Workflow Automation
+      </div>
+      <div class="location">Available — Apr 2026</div>
+    </div>
+  </header>
+
+  <!-- BODY -->
+  <div class="body-grid">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+      <div class="side-block">
+        <div class="side-label">Contact</div>
+        <a href="mailto:diamantejudandrew@gmail.com">diamantejudandrew@gmail.com</a>
+        <a href="https://wa.me/639124194443" target="_blank" rel="noopener">+63 912 419 4443</a>
+        <p style="margin-top:8px">Ilocos Region, Philippines</p>
+      </div>
+
+      <div class="side-block">
+        <div class="side-label">Portfolio</div>
+        <a href="#" id="portfolio-link">arko-automation · GitHub Pages</a>
+        <p style="font-size:12px;color:var(--ink-ghost);margin-top:4px">↳ Replace with your live URL</p>
+      </div>
+
+      <div class="side-block">
+        <div class="side-label">Core Skills</div>
+        <ul class="skills-list">
+          <li><span class="skill-name">Virtual Assistance</span><span class="skill-level">Proficient</span></li>
+          <li><span class="skill-name">Operations Support</span><span class="skill-level">Proficient</span></li>
+          <li><span class="skill-name">AI-Assisted Work</span><span class="skill-level">Advanced</span></li>
+          <li><span class="skill-name">Automation Tools</span><span class="skill-level">Working</span></li>
+          <li><span class="skill-name">Written English</span><span class="skill-level">Professional</span></li>
+        </ul>
+      </div>
+
+      <div class="side-block">
+        <div class="side-label">Stack</div>
+        <div class="stack-chips">
+          <span class="chip">Claude</span>
+          <span class="chip">Cowork</span>
+          <span class="chip">Projects</span>
+          <span class="chip">ChatGPT</span>
+          <span class="chip">Make.com</span>
+          <span class="chip">Power Automate</span>
+          <span class="chip">Notion</span>
+          <span class="chip">Trello</span>
+          <span class="chip">Slack</span>
+          <span class="chip">Google WS</span>
+          <span class="chip">MS 365</span>
+          <span class="chip">Canva</span>
+        </div>
+      </div>
+
+      <div class="side-block">
+        <div class="side-label">Languages</div>
+        <p><strong style="color:var(--ink)">English</strong> — Professional, written & spoken</p>
+        <p><strong style="color:var(--ink)">Filipino</strong> — Native</p>
+        <p><strong style="color:var(--ink)">Ilokano</strong> — Native</p>
+      </div>
+
+      <div class="side-block">
+        <div class="side-label">Time Zones</div>
+        <p>Philippine Standard Time (UTC+8). Comfortable working AU and US overlap hours.</p>
+      </div>
+
+    </aside>
+
+    <!-- MAIN -->
+    <main class="content">
+
+      <!-- SUMMARY -->
+      <section class="section">
+        <div class="section-head">
+          <div class="section-num">§ 01</div>
+          <div class="section-title">Professional Summary</div>
+          <div class="section-meta">Introduction</div>
+        </div>
+        <p class="summary">
+          Detail-oriented virtual assistant who combines strong administrative fundamentals with practical AI fluency. I use Claude, Claude Cowork, and automation tools to reduce repetitive work, turn unstructured information into usable outputs, and give busy founders and operators back several hours a week. Comfortable working independently across time zones, responsive on Philippine and US business hours, and focused on consistent, accurate delivery.
+        </p>
+      </section>
+
+      <!-- AI CAPABILITIES -->
+      <section class="section">
+        <div class="section-head">
+          <div class="section-num">§ 02</div>
+          <div class="section-title">How I use AI to multiply output</div>
+          <div class="section-meta">Capabilities</div>
+        </div>
+
+        <div class="ai-grid">
+          <div class="ai-item">
+            <h4><span class="num">01</span>Inbox Triage</h4>
+            <p>Draft first-pass replies in Claude matched to the principal's voice; flag anything requiring decisions.</p>
+          </div>
+          <div class="ai-item">
+            <h4><span class="num">02</span>Research Briefs</h4>
+            <p>Turn 10+ source tabs into a one-page summary with direct quotes and links in under 30 minutes.</p>
+          </div>
+          <div class="ai-item">
+            <h4><span class="num">03</span>Meeting Notes</h4>
+            <p>Convert raw transcripts into action items, owners, and deadlines formatted for the team tracker.</p>
+          </div>
+          <div class="ai-item">
+            <h4><span class="num">04</span>Content Repurposing</h4>
+            <p>Reshape one long-form asset into posts, email snippets, and internal updates without losing voice.</p>
+          </div>
+          <div class="ai-item">
+            <h4><span class="num">05</span>SOP Creation</h4>
+            <p>Interview stakeholders, let Claude Cowork structure the draft, finalize and publish in Notion.</p>
+          </div>
+          <div class="ai-item">
+            <h4><span class="num">06</span>Data Cleanup</h4>
+            <p>Standardize messy spreadsheets and contact lists with AI-assisted validation and deduplication.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- WORK EXPERIENCE -->
+      <section class="section">
+        <div class="section-head">
+          <div class="section-num">§ 03</div>
+          <div class="section-title">Work Experience</div>
+          <div class="section-meta">On the record</div>
+        </div>
+
+        <div class="entry">
+          <div class="entry-date">
+            [Start Year] —<br/><span class="now">[End Year]</span>
+          </div>
+          <div class="entry-body">
+            <h3>Service Technician</h3>
+            <div class="org">
+              EMD Diamante Refrigeration &amp; Aircon Services
+              <span class="pill">Family Business</span>
+            </div>
+            <ul>
+              <li>Performed on-site installation, diagnosis, and repair of residential and commercial refrigeration and airconditioning units, <strong>delivering same-day service in most cases</strong>.</li>
+              <li>Communicated directly with clients before, during, and after service calls — explaining issues in plain language, setting expectations, and following up to confirm resolution.</li>
+              <li>Handled <strong>end-to-end job coordination</strong>: intake call, scheduling, parts sourcing, on-site work, and payment — the same workflow a virtual assistant runs for a service business, done offline.</li>
+              <li>Maintained service records, parts inventory notes, and customer contact details; developed the habit of accurate documentation that now translates directly into CRM, data-entry, and SOP work.</li>
+              <li>Built a reputation for reliability and professionalism with repeat clients, demonstrating the <strong>ownership and accountability</strong> that remote employers look for.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section class="section">
+        <div class="section-head">
+          <div class="section-num">§ 04</div>
+          <div class="section-title">Projects &amp; Portfolio</div>
+          <div class="section-meta">Selected work</div>
+        </div>
+
+        <div class="entry">
+          <div class="entry-date">
+            [Year] —<br/><span class="now">Present</span>
+          </div>
+          <div class="entry-body">
+            <h3>Arko Automation</h3>
+            <div class="org">Founder &amp; Builder <span class="pill">Remote</span></div>
+            <ul>
+              <li>Built and maintain the Arko Automation portfolio site showcasing <strong>AI-assisted workflows and automation demos</strong>.</li>
+              <li>Produce case studies that translate technical builds into plain-language value for non-technical clients.</li>
+              <li>Actively publishing reusable Claude workflows for common operations tasks — research, SOPs, reporting.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div style="margin-top:32px">
+          <div style="font-family:var(--mono);font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-faint);margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid var(--rule)">
+            ↳ Selected Builds
+          </div>
+
+          <div class="projects-grid">
+            <div class="project">
+              <div class="p-num">/ 01</div>
+              <div class="p-body">
+                <em>Research &amp; Briefing</em> workflow
+                <span class="desc">Compresses multi-hour research across 10+ sources into a structured one-pager with quotes and links.</span>
+              </div>
+              <div class="p-tag">Claude</div>
+            </div>
+            <div class="project">
+              <div class="p-num">/ 02</div>
+              <div class="p-body">
+                <em>Inbox Triage</em> template
+                <span class="desc">Drafts first-pass replies matched to a principal's voice and flags decisions needed.</span>
+              </div>
+              <div class="p-tag">Claude Projects</div>
+            </div>
+            <div class="project">
+              <div class="p-num">/ 03</div>
+              <div class="p-body">
+                <em>Meeting-to-Action</em> pipeline
+                <span class="desc">Converts raw transcripts into owners, deadlines, and tracker-ready rows.</span>
+              </div>
+              <div class="p-tag">Claude · Notion</div>
+            </div>
+            <div class="project">
+              <div class="p-num">/ 04</div>
+              <div class="p-body">
+                <em>SOP Generator</em> workflow
+                <span class="desc">Turns a short stakeholder interview into a publish-ready Notion SOP.</span>
+              </div>
+              <div class="p-tag">Claude Cowork</div>
+            </div>
+            <div class="project">
+              <div class="p-num">/ 05</div>
+              <div class="p-body">
+                <em>Interactive 3D Browser Game</em>
+                <span class="desc">Shipped end-to-end as a solo project — single-file HTML, demonstrating ability to learn fast and deliver.</span>
+              </div>
+              <div class="p-tag">Three.js</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- AVAILABILITY -->
+      <section class="availability">
+        <div class="label"><span class="dot"></span>Currently Available</div>
+        <p class="statement">
+          Full-time, remote. Available to <em>start immediately</em>. Comfortable with PH, AU, and US time-zone coverage.
+        </p>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="colophon">
+    <div>© 2026 Jud Andrew C. Diamante</div>
+    <div>Set in <span class="accent">Cormorant</span> &amp; Inter</div>
+    <div>Ilocos · Philippines</div>
+  </footer>
+
+</div>
+
+</body>
+</html>
